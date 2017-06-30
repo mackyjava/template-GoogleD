@@ -1,0 +1,12 @@
+$gris: rgb(66, 66, 66);
+$gris-claro: rgb(95, 99, 104);
+$gris-texto: rgb(65, 69, 73);
+$azul: rgb(66, 133, 244);
+$amarillo:invert($azul);
+$azul-claro:invert($amarillo);
+$rosa:complement($azul + $gris);
+$violeta:complement($rosa + $amarillo);
+$verde:invert($violeta);
+$rosa-claro:complement($violeta + $azul);
+$rojo:darken($rosa-claro, 40%);
+$grist: invert($gris);

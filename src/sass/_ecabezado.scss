@@ -1,0 +1,87 @@
+ul{
+	li{
+		list-style:none;
+		display:inline-block;
+		margin-left:5%;
+	}
+}
+@mixin margen($top, $left) {
+    margin-top: $top;
+    margin-left: $left;
+}
+.cont-home {
+	img{
+		width:100%;
+		padding: 4% 4% 4% 4%;
+	    @include margen(-.5%, -1%);
+	}
+}
+
+h2{
+	@include margen(5%, 5%);
+}
+h4{
+	@include margen(5%, 5%);
+}
+p{
+	@include margen(0%, 4.5%);
+	color: $gris-texto;
+}
+small{
+	color:$gris-claro;
+	@include margen(-2%, 4%);
+}
+
+.sep{
+	width: 90%;
+	min-height: 0px;
+	padding:0;
+	border:2px solid $azul;
+	@include margen(2%, 4%);
+}
+
+hr{
+	min-height:0px;
+	padding:0px;
+	@include margen(3%, 5%);
+	border-top:2px solid $gris-claro;
+}
+h3{
+	@include margen(-1%, 5%);
+}
+.cont-dos{
+	span{
+		@include margen(1%, 5%);
+	}
+	h2{
+		@include margen(-3%, 5%);
+	}
+}
+
+.cont-dos{
+	.recuadro{
+		width:90%;
+		height:100px;
+		background-color: $grist;
+		@include margen(3%, 1%);
+		}
+	small{
+		@include margen(3%, 5%);
+		color: $gris;
+	}
+	 .up{
+	   	@include margen(-8%, 5%);
+	   }
+}
+img{
+	@include margen(0%, 2%);
+}
+.footer{
+	h5{
+		@include margen(0%, 6%);
+	}
+	p{
+		@include margen(-2%, 8%);
+		color: $gris-texto;
+	}
+}
